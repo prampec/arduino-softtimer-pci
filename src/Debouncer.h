@@ -72,7 +72,7 @@ class Debouncer : public PciListener, public Task
      * Change the delay of the bouncing time-span. The default value is DEFAULT_DEBOUNCE_DELAY_MILLIS;
      */
     unsigned long debounceDelayMicros = DEFAULT_DEBOUNCE_DELAY_MICROS;
-    boolean setDebounceDelayMs(unsigned long debounceDelayMs) { this->debounceDelayMicros = debounceDelayMs * 1000; return true; };
+    bool setDebounceDelayMs(unsigned long debounceDelayMs) { this->debounceDelayMicros = debounceDelayMs * 1000; return true; };
   private:
     int _pin;
     int _onLevel;

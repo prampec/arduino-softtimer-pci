@@ -67,7 +67,7 @@ class Rotary : public Task, public IPciChangeHandler
     volatile int _stateCCW;
     int _pinA;
     int _pinB;
-    boolean _pullUp;
+    bool _pullUp;
 
     void (*_onRotation)(short direction, Rotary* rotary);
     static void step(Task* me);
